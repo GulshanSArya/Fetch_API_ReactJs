@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background:aliceblue;
+  }
+.row{
+    display: flex;
+    width:100% ;
+    flex-wrap: wrap;
+    margin-top: 0px;
+   }
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 7px;
+    border: 8px solid #9E9E9E;
+    height: 610px; 
+  }
+img{
+    height: 300px;
+    width: 100%;
+  }
+.button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: darkslategray;
+}
+.sort {
+    background: darkslategray;
+    display: flex;
+    align-items: center;
+  }
+.sort h2{
+    padding: 2px;
+    background: darkslategray;
+    color: rgb(243, 247, 247);
+    margin: 20px;
+  }
+span{
+    background: darkslategray;
+  }
+.sort .btn1{
+  margin: 16px;
+  padding: 6px;
+  border-radius: 18px;
+  background: aliceblue;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  }
+.sort .btn2{
+  margin: 16px;
+  padding: 6px;
+  border-radius: 18px;
+  background: aliceblue;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  }
+  .search{
+    display: flex;
+    align-items: center;
+    background: darkslategray;
+  }
+.search input{
+  width: 225px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: aliceblue;
+}
+
+
+@media (max-width: 600px) {
+    .column {
+      float: none;
+      width: 100%;
+      height: auto;
+    }
+    .row{
+      display: block;
+    }
+    img{
+      height: 300px;
+      width: 100%;
+    }
+    .search{
+      margin-left: 25px;
+    }
+    .button{
+      display: block;
+      height: 125px;
+    }
+  }
+@media (max-width:300px) {
+.sort{
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.sort .btn1{
+  margin: 18px 16px;
+  padding: 5px;
+}
+.sort .btn2 {
+  margin: 18px 16px;
+  padding: 5px;
+}
+.sort h2{
+  margin: 0px;
+  margin-left: 27px;
+}
+.button{
+  height: 125px;
+}
+}
+@media (max-width:350px) {
+  .sort{
+    display: block;
+  }
+  .sort h2{
+    margin: 0px;
+    margin-left: 15px;
+  }
+  .button{
+    height: 150px;
+  }
+  .search{
+    margin-left: 15px;
+  }
+}
+@media (max-width:250px) {
+.search{
+  margin-left: 15px;
+  width: 90px;
+}
+}
+@media (max-width:206px) {
+  .search{
+    margin-left: 10px;
+  }
+  .button{
+    height: 140px;
+  }
+  .sort .btn1{
+    margin: 5px 13px;
+  }
+  }

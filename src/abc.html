@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // problem 1
+        //Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3,
+        // "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5.
+//         for (let i = 1; i <= 100; i++) {
+//   let f = i % 3 == 0,
+//     b = i % 5 == 0;
+//   console.log(f ? (b ? 'FizzBuzz' : 'Fizz') : b ? 'Buzz' : i);
+// }
+
+// problem 2
+
+// var addSix = createBase(6);
+// addSix(10); // returns 16
+// addSix(21); // returns 27
+
+// function createBase(baseNumber) {
+//   return function(N) {
+//     // we are referencing baseNumber here even though it was declared
+//     // outside of this function. Closures allow us to do this in JavaScript
+//     return baseNumber + N;
+//   }
+// }
+
+// var addSix = createBase(6);
+// console.log(addSix(10));
+// console.log(addSix(21));
+
+// problem 3
+
+// function mul (x) {
+//   return function (y) { // anonymous function
+//     return function (z) { // anonymous function
+//       return x * y * z;
+//     };
+//   };
+// }
+// console.log(mul(2)(3)(4)); // output : 24
+// console.log(mul(4)(3)(4)); // output : 48
+
+// problem 4
+
+var firstWord = "Mary";
+var secondWord = "Army";
+
+isAnagram(firstWord, secondWord); // true
+
+function isAnagram(first, second) {
+  // For case insensitivity, change both words to lowercase.
+  var a = first.toLowerCase();
+  var b = second.toLowerCase();
+
+  // Sort the strings, and join the resulting array to a string. Compare the results
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+
+  return a === b;
+}
+//console.log(isAnagram());
+
+
+</script>
+    
+</body>
+</html>

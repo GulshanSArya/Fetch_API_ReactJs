@@ -49,17 +49,6 @@ if (!data.length) return <h3>Loading...</h3>;
 
 return (
  <div className="row">
-  <nav>
-    <ul>
-      <li><h2>Gulshan S Arya</h2></li>
-    </ul>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>SIGNin</li>
-      <li>Contact</li>
-    </ul>
-  </nav>
   <div className="button">
     <div className="sort">
     <span><h2>Sort By :</h2></span>
